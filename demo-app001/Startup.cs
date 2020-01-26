@@ -48,11 +48,11 @@ namespace demo_app001
                 app.UseHsts();
             }
 
-            /*
+            
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            // app.UseStaticFiles();
             app.UseCookiePolicy();
-            */
+            
             app.UseMvc();
         }
     }
