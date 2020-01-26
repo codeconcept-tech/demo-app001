@@ -47,11 +47,7 @@ namespace demo_app001
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
-           /*
-            * adding comment box
-            * adding some more text
-            * 
-            */
+          
         
             app.UseHttpsRedirection();
             app.UseStaticFiles();
