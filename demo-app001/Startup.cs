@@ -48,12 +48,7 @@ namespace demo_app001
                 app.UseHsts();
             }
 
-            /*
-             * adding comment block
-             * 
-             * 
-             * 
-             */
+        
             // app.UseHttpsRedirection();
             // app.UseStaticFiles();
             // app.UseCookiePolicy();
