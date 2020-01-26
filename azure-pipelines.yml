@@ -16,4 +16,15 @@ steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 
+- task: DotNetCore@2
+ inputs:
+     command: publish
+     publishWebProjects: True
+     argument: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+     zipAfterPublish: True
+     
 - task: PublishBuildArtifacts@1
+  inputs: 
+     PathToPublish: '$(Build.ArtifactStagingDirectory)'
+     ArtifactName: 'codeconcept-tech.demo-app001'
+     publishLocation: 'Container'
