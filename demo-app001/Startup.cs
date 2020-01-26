@@ -49,7 +49,7 @@ namespace demo_app001
             }
 
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            // app.UseStaticFiles();
             app.UseCookiePolicy();
 
             app.UseMvc();
