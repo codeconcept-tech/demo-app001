@@ -47,11 +47,11 @@ namespace demo_app001
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
-
+           
         
             // app.UseHttpsRedirection();
             // app.UseStaticFiles();
-            // app.UseCookiePolicy();
+            app.UseCookiePolicy();
             
             app.UseMvc();
         }
