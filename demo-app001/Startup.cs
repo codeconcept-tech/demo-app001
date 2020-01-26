@@ -48,6 +48,12 @@ namespace demo_app001
                 app.UseHsts();
             }
           
+            /*
+             * 
+             * Adding comment box again
+             * 
+             * 
+             */
         
             app.UseHttpsRedirection();
             app.UseStaticFiles();
